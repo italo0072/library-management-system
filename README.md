@@ -20,17 +20,21 @@ library-management-system/
 
 1. **Clona o copia este proyecto** dentro de la carpeta pública de tu servidor local
    (por ejemplo `htdocs` en XAMPP o `www` en Laragon).
+   Comando para clonar
+   ```
+   git clone https://github.com/italo0072/library-management-system
+   ```
 
-2. **Levanta Apache y MySQL** desde el panel de XAMPP/Laragon.
+3. **Levanta Apache y MySQL** desde el panel de XAMPP/Laragon.
 
-3. **Crea la base de datos**:
+4. **Crea la base de datos**:
    - Abre phpMyAdmin (`http://localhost/phpmyadmin`).
    - Ve a la pestaña **SQL** e importa/pega el contenido de `biblioteca.sql`, o usa
      "Importar" y selecciona el archivo directamente.
    - Esto creará la base de datos `biblioteca` con las tablas `libros`, `usuarios`
      y `prestamos`.
 
-4. **Configura las credenciales de conexión** en `classes/Database.php` si tu
+5. **Configura las credenciales de conexión** en `classes/Database.php` si tu
    configuración de MySQL no usa el usuario `root` sin contraseña:
 
    ```php
@@ -40,7 +44,7 @@ library-management-system/
    private $password = '';
    ```
 
-5. **Ejecuta el proyecto**:
+6. **Ejecuta el proyecto**:
    - Con XAMPP/Laragon: abre `http://localhost/library-management-system/index.php`
    - O con el servidor integrado de PHP, desde la carpeta del proyecto:
      ```bash
