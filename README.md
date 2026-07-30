@@ -46,11 +46,7 @@ library-management-system/
 
 6. **Ejecuta el proyecto**:
    - Con XAMPP/Laragon: abre `http://localhost/library-management-system/index.php`
-   - O con el servidor integrado de PHP, desde la carpeta del proyecto:
-     ```bash
-     php -S localhost:8000
-     ```
-     y visita `http://localhost:8000`
+   
 
 ##  Funcionalidades implementadas
 
